@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:storage_view/src/ui/controller/exceptions/exceptions.dart';
 import 'package:storage_view/src/ui/controller/storage_viewer_controller.dart';
 import 'package:storage_view/src/ui/utils/utils.dart';
@@ -155,7 +155,7 @@ class _StorageViewState extends State<StorageView> {
                             icon: const Icon(Icons.delete),
                             style: ButtonStyle(
                               backgroundColor:
-                                  MaterialStateProperty.all(Colors.red),
+                                  WidgetStateProperty.all(Colors.red),
                             ),
                           ),
                         ),
@@ -204,8 +204,8 @@ class _StorageViewState extends State<StorageView> {
 
   _getDefaultCheckboxTheme() {
     return CheckboxThemeData(
-      checkColor: MaterialStateProperty.all(Colors.white),
-      side: MaterialStateBorderSide.resolveWith(
+      checkColor: WidgetStateProperty.all(Colors.white),
+      side: WidgetStateBorderSide.resolveWith(
           (_) => const BorderSide(width: 1, color: Colors.white)),
     );
   }

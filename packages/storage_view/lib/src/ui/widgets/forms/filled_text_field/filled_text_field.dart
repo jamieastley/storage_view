@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter/services.dart';
 import 'package:storage_view/storage_view.dart';
 
@@ -65,7 +65,7 @@ class FilledTextField extends StatelessWidget {
       suffix: suffix,
       hintText: hintText,
       hintStyle: TextStyle(
-        color: Colors.white.withOpacity(0.3),
+        color: Colors.white.withValues(alpha: 0.3),
         fontWeight: FontWeight.w500,
         fontSize: 16,
       ),

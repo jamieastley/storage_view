@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 const _columnTitleTextStyle =
     TextStyle(color: Colors.white, fontWeight: FontWeight.bold);
@@ -64,7 +64,7 @@ class StorageViewTheme {
   factory StorageViewTheme.fromFlutterTheme(BuildContext context) {
     final t = Theme.of(context);
     return StorageViewTheme(
-      backgroundColor: t.colorScheme.background,
+      backgroundColor: t.colorScheme.surface,
       cellTextStyle: t.textTheme.bodyLarge,
       columnTitleTextStyle: t.textTheme.titleLarge,
       deleteIconTheme: t.primaryIconTheme,

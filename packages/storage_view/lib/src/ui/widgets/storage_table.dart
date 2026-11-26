@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:storage_view/src/ui/controller/storage_viewer_controller.dart';
 import 'package:storage_view/src/ui/utils/utils.dart';
 import 'package:storage_view/src/ui/widgets/forms/edit/edit_field_form.dart';
@@ -178,6 +178,6 @@ class _StorageTableState extends State<StorageTable> {
   }
 
   TableBorder _getDefaultTableBorder() {
-    return TableBorder.all(color: Colors.white.withOpacity(0.2), width: 1);
+    return TableBorder.all(color: Colors.white.withValues(alpha: 0.2), width: 1);
   }
 }

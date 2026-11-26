@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:storage_view/src/extensions/extensions.dart';
 import 'package:storage_view/src/ui/utils/utils.dart';
 import 'package:storage_view/src/ui/widgets/forms/edit/entry_info.dart';
@@ -142,7 +142,7 @@ class _EditFieldFormState extends State<EditFieldForm> {
                           icon: const Icon(Icons.close),
                           style: ButtonStyle(
                             backgroundColor:
-                                MaterialStateProperty.all(Colors.red),
+                                WidgetStateProperty.all(Colors.red),
                           ),
                         ),
                       ),
