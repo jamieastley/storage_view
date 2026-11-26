@@ -18,6 +18,7 @@ dependencies:
       ../../shared_preferences_storage_view_driver/
 
 
+  material_ui: any
 dev_dependencies:
   flutter_test:
     sdk: flutter

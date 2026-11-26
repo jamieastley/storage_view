@@ -16,6 +16,7 @@ dependencies:
       ../../flutter_secure_storage_view_driver/
   cupertino_icons: ^1.0.2
 
+  material_ui: any
 dev_dependencies:
   flutter_test:
     sdk: flutter
